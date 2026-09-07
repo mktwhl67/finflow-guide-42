@@ -79,30 +79,36 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-16 pt-14 md:grid-cols-2">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/60 px-3 py-1 text-xs font-semibold text-brand ring-1 ring-brand/20 backdrop-blur">
-              Curso completo na Kiwify
+              <span className="size-1.5 rounded-full bg-accent" />
+              Oferta de lançamento: 53% de desconto hoje
             </span>
             <h1 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl">
-              Domine seu dinheiro e <span className="text-brand">construa</span> sua liberdade.
+              Pare de ver seu salário <span className="text-brand">sumir</span> antes do dia 10.
             </h1>
             <p className="mt-5 max-w-md text-lg leading-relaxed text-ink/60">
-              Do salário apertado ao patrimônio consistente. Um método passo a passo para investir
-              com clareza, sem planilha complicada.
+              Descubra o método passo a passo que já tirou milhares de pessoas do aperto e as levou
+              à primeira carteira de investimentos — mesmo ganhando pouco.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#planos"
                 className="group inline-flex items-center gap-2 rounded-2xl bg-brand px-6 py-4 text-base font-semibold text-white shadow-xl shadow-brand/25 transition hover:bg-brand/90"
               >
-                Ver planos do curso
+                QUERO SAIR DO APERTO
                 <span className="transition group-hover:translate-x-0.5">&rarr;</span>
               </a>
               <a
                 href="#metodo"
                 className="inline-flex items-center gap-2 rounded-2xl bg-white/60 px-6 py-4 text-base font-semibold text-ink ring-1 ring-white/70 backdrop-blur transition hover:bg-white/80"
               >
-                Ver método
+                Ver como funciona
               </a>
             </div>
+            <p className="mt-4 text-sm font-medium text-ink/50">
+              De <span className="line-through">R$ 80</span> por apenas{" "}
+              <span className="font-bold text-brand">R$ 37</span> &middot; acesso imediato &middot;
+              garantia de 7 dias
+            </p>
             <div className="mt-8 flex flex-wrap gap-8">
               <div>
                 <p className="font-display text-2xl font-bold">+4.200</p>
