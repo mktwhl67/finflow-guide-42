@@ -68,7 +68,7 @@ function Index() {
               </a>
             </nav>
             <BuyButton className="rounded-xl bg-ink px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-ink/10 transition hover:bg-ink/90">
-              Entrar no curso
+              Garantir desconto
             </BuyButton>
           </div>
         </div>
@@ -470,6 +470,49 @@ function Index() {
         </div>
       </section>
 
+      {/* depoimentos */}
+      <section className="relative z-10">
+        <div className="mx-auto max-w-6xl px-6 pb-24">
+          <div className="mb-10 text-center">
+            <h2 className="font-display text-4xl font-bold tracking-tight">
+              Quem aplicou o método, mudou de vida
+            </h2>
+            <p className="mt-3 text-ink/55">Resultados reais de alunos reais.</p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              [
+                "Marina S.",
+                "Em 4 meses saí do vermelho e montei minha primeira reserva. O passo a passo fez toda a diferença.",
+              ],
+              [
+                "Rodrigo T.",
+                "Eu ganhava bem e mesmo assim vivia apertado. Hoje sei exatamente para onde vai cada real.",
+              ],
+              [
+                "Camila & Pedro",
+                "Fizemos o diagnóstico juntos e montamos um plano que cabe na nossa renda. Direto, sem enrolação.",
+              ],
+            ].map(([nome, texto]) => (
+              <figure
+                key={nome}
+                className="rounded-3xl bg-white/55 p-6 ring-1 ring-white/60 backdrop-blur-xl"
+              >
+                <div className="flex items-center gap-1 text-accent">
+                  {"★★★★★".split("").map((s, i) => (
+                    <span key={i}>{s}</span>
+                  ))}
+                </div>
+                <blockquote className="mt-4 text-sm leading-relaxed text-ink/70">
+                  &ldquo;{texto}&rdquo;
+                </blockquote>
+                <figcaption className="mt-4 text-sm font-semibold">{nome}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <footer className="relative z-10">
         <div className="mx-auto max-w-6xl px-6 pb-12 text-center text-sm text-ink/40">
           <p>
@@ -478,6 +521,13 @@ function Index() {
           </p>
         </div>
       </footer>
+
+      {/* sticky CTA mobile */}
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/40 bg-white/70 p-3 backdrop-blur-xl md:hidden">
+        <BuyButton className="flex w-full items-center justify-center gap-2 rounded-2xl bg-brand py-3.5 text-sm font-semibold text-white shadow-xl shadow-brand/25">
+          QUERO POR R$ 37 &rarr;
+        </BuyButton>
+      </div>
     </div>
   );
 }
