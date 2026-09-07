@@ -168,6 +168,41 @@ function Index() {
         </div>
       </section>
 
+      {/* dor */}
+      <section className="relative z-10">
+        <div className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl bg-white/55 p-8 ring-1 ring-white/60 backdrop-blur-xl md:p-10">
+            <h2 className="max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight md:text-4xl">
+              Se o seu salário entra no dia 5 e some no dia 12, o problema{" "}
+              <span className="text-brand">não é você</span> — é a falta de método.
+            </h2>
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-white/60">
+                <p className="text-sm leading-relaxed text-ink/70">
+                  <span className="font-semibold text-ink">Você trabalha o mês inteiro</span> e no
+                  fim não sobra nada para investir — todo mês a mesma correria.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-white/60">
+                <p className="text-sm leading-relaxed text-ink/70">
+                  <span className="font-semibold text-ink">Dívidas travam sua vida</span> e qualquer
+                  imprevisto vira um novo empréstimo.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-white/70 p-5 ring-1 ring-white/60">
+                <p className="text-sm leading-relaxed text-ink/70">
+                  <span className="font-semibold text-ink">Você quer mudar</span>, mas não sabe por
+                  onde começar — e cada ano que passa custa caro.
+                </p>
+              </div>
+            </div>
+            <p className="mt-6 text-base font-medium text-ink/60">
+              A boa notícia: isso tem solução, e ela cabe no seu bolso. &darr;
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* método */}
       <section id="metodo" className="relative z-10">
         <div className="mx-auto max-w-6xl px-6 pb-24">
@@ -248,13 +283,15 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 pb-24">
           <div className="mb-10 text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold text-accent">
-              Oferta por tempo limitado
+              &#9889; Oferta de lançamento — por tempo limitado
             </span>
             <h2 className="mt-4 font-display text-4xl font-bold tracking-tight">
-              Escolha seu plano
+              Menos de R$ 1,25 por dia para mudar sua vida financeira
             </h2>
             <p className="mt-3 text-ink/55">
-              Acesso imediato pela Kiwify, garantia de 7 dias e suporte da comunidade.
+              De <span className="line-through">R$ 80</span> por{" "}
+              <span className="font-bold text-brand">R$ 37</span>. Acesso imediato pela Kiwify,
+              garantia de 7 dias e suporte da comunidade.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -415,16 +452,16 @@ function Index() {
         <div className="mx-auto max-w-6xl px-6 pb-24">
           <div className="relative overflow-hidden rounded-[2rem] bg-white/55 p-10 text-center ring-1 ring-white/60 backdrop-blur-2xl md:p-16">
             <div className="pointer-events-none absolute -top-24 left-1/2 size-[400px] -translate-x-1/2 rounded-full bg-brand/25 blur-[100px]" />
-            <h2 className="relative font-display text-4xl font-bold tracking-tight">
-              Comece a investir hoje
+            <h2 className="relative font-display text-4xl font-bold tracking-tight md:text-5xl">
+              Daqui a 12 meses, você vai desejar ter começado hoje.
             </h2>
             <p className="relative mx-auto mt-4 max-w-lg text-ink/60">
               De <span className="line-through">R$ 80</span> por apenas{" "}
-              <span className="font-bold text-brand">R$ 37</span>. Acesso imediato, garantia de 7
-              dias e o suporte de quem também começou do zero.
+              <span className="font-bold text-brand">R$ 37</span> — menos que um lanche por mês.
+              Risco zero com a garantia de 7 dias.
             </p>
             <BuyButton className="relative mt-8 inline-flex items-center gap-2 rounded-2xl bg-brand px-8 py-4 text-base font-semibold text-white shadow-xl shadow-brand/25 transition hover:bg-brand/90">
-              Garantir minha vaga &rarr;
+              SIM, QUERO COMEÇAR AGORA &rarr;
             </BuyButton>
             <p className="relative mt-4 text-xs text-ink/45">
               Pagamento seguro via Kiwify &middot; Acesso imediato &middot; Garantia de 7 dias
