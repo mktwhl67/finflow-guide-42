@@ -77,16 +77,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Finânceia — Curso de Finanças Pessoais" },
+      {
+        name: "description",
+        content:
+          "Domine seu dinheiro com o método Finânceia: curso online de finanças pessoais na Kiwify, do zero à sua primeira carteira de investimentos.",
+      },
+      { property: "og:title", content: "Finânceia — Curso de Finanças Pessoais" },
+      {
+        property: "og:description",
+        content:
+          "Do salário apertado ao patrimônio consistente. Um método passo a passo para investir com clareza, sem planilha complicada.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
