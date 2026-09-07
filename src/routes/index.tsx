@@ -316,7 +316,7 @@ function Index() {
                 </li>
               </ul>
               <BuyButton className="mt-7 rounded-2xl bg-white/80 py-3 text-center text-sm font-semibold ring-1 ring-ink/10 transition hover:bg-white">
-                Assinar plano
+                QUERO ESTE PLANO
               </BuyButton>
             </div>
             {/* plano 2 (destaque) */}
@@ -346,7 +346,7 @@ function Index() {
                 </li>
               </ul>
               <BuyButton className="mt-7 rounded-2xl bg-brand py-3 text-center text-sm font-semibold text-white shadow-lg shadow-brand/25 transition hover:bg-brand/90">
-                Assinar plano
+                QUERO ESTE PLANO
               </BuyButton>
             </div>
             {/* plano 3 */}
@@ -373,7 +373,7 @@ function Index() {
                 </li>
               </ul>
               <BuyButton className="mt-7 rounded-2xl bg-white/80 py-3 text-center text-sm font-semibold ring-1 ring-ink/10 transition hover:bg-white">
-                Assinar plano
+                QUERO ESTE PLANO
               </BuyButton>
             </div>
           </div>
